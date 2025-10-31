@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Rebrand - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- USE THE SAME NAVIGATION STRUCTURE -->
+  <nav class="navbar">
+    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <a href="contact.html">Contact</a>
+      
+      <div id="userSection">
+        <a href="account.html" id="loginBtn">Login / Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-content">
+    <h1>Checkout</h1>
+    
+    <div class="checkout-container">
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="checkoutItems">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <div class="total-section">
+          <h3 id="checkoutTotal">Total: $0</h3>
+        </div>
+      </div>
+
+      <div class="checkout-form">
+        <h2>Shipping Information</h2>
+        <form id="checkoutForm">
+          <input type="text" id="fullName" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <input type="text" id="address" placeholder="Shipping Address" required>
+          <input type="text" id="city" placeholder="City" required>
+          <input type="text" id="zipCode" placeholder="ZIP Code" required>
+          <input type="text" id="country" placeholder="Country" required>
+          
+          <h2>Payment Information</h2>
+          <input type="text" id="cardNumber" placeholder="Card Number" required>
+          <input type="text" id="expiryDate" placeholder="MM/YY" required>
+          <input type="text" id="cvv" placeholder="CVV" required>
+          <input type="text" id="cardName" placeholder="Name on Card" required>
+          
+          <button type="submit" class="cta-btn">Complete Purchase</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

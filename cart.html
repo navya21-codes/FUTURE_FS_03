@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Rebrand - Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- REPLACE THE ENTIRE HEADER SECTION WITH THIS -->
+  <nav class="navbar">
+    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html" class="active">Cart (<span id="cartCount">0</span>)</a>
+      <a href="contact.html">Contact</a>
+      
+      <div id="userSection">
+        <a href="account.html" id="loginBtn">Login / Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-content">
+    <h1>Your Cart</h1>
+    <div id="cartItems"></div>
+    <h2 id="totalPrice">Total: $0</h2>
+    <a href="checkout.html" class="cta-btn">Proceed to Checkout</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
