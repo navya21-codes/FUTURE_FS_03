@@ -33,7 +33,17 @@ nike-rebrand-website/
 ## Future Enhancements
 
 -  Backend integration with Firebase
-- · User authentication system
-- · Product search and filtering
-- · Payment gateway integration
-- · Product reviews and ratings
+-  User authentication system
+-  Product search and filtering
+-  Payment gateway integration
+-  Product reviews and ratings
+
+##  Pages Included
+
+-  **Homepage (index.html)** - Brand introduction and featured products
+-  **Products (products.html)** - Complete product catalog
+-  **Shopping Cart (cart.html)** - Cart management
+-  **Checkout (checkout.html)** - Purchase completion
+-  **User Account (account.html)** - Profile management
+-  **Contact (contact.html)** - Customer support
+-  **About (about.html)** - Brand story
