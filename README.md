@@ -32,7 +32,7 @@ nike-rebrand-website/
 
 ## Future Enhancements
 
-- · Backend integration with Firebase
+-  Backend integration with Firebase
 - · User authentication system
 - · Product search and filtering
 - · Payment gateway integration
