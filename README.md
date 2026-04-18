@@ -5,11 +5,9 @@ Modern brand website redesign with AI-generated elements built on Next.js and Fi
 
 # Tech Stack 
 - ****Frontend****
-· Next.js
-· Tailwind CSS 
-
-- ****Backend****
-· Firebase.
+· HTML5
+. CSS3
+. JavaScript
 
 ## Project Structure
 ```
