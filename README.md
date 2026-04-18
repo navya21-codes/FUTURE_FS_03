@@ -4,7 +4,7 @@
 Modern brand website redesign with AI-generated elements built on Next.js and Firebase.This project involved a complete front-to-back overhaul, creating a sleek, responsive, and high-performance website. The design process was accelerated and enhanced using AI for generating key branding assets.
 
 # Tech Stack 
-- ****Frontend****
+ ****Frontend****
 - HTML5
 - CSS3
 - JavaScript
