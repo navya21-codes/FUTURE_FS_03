@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Nike Rebrand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- REPLACE THE ENTIRE HEADER SECTION WITH THIS -->
+  <nav class="navbar">
+    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <a href="contact.html" class="active">Contact</a>
+      
+      <div id="userSection">
+        <a href="account.html" id="loginBtn">Login / Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-content">
+    <h1>Contact Us</h1>
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number">
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+    <div id="contactSuccess" style="display: none; color: lightgreen; margin-top: 15px;">
+      ✅ Your message has been sent successfully!
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
