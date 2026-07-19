@@ -227,25 +227,43 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // -----------------------
-// Contact Page
+// Contact Page (EmailJS)
 // -----------------------
+
+emailjs.init({
+    publicKey: "BPqjlRn4GYwplkwjE",
+});
+
 const contactForm = document.getElementById("contactForm");
+
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
+    contactForm.addEventListener("submit", function (e) {
 
-    const messages = JSON.parse(localStorage.getItem("messages")) || [];
-    messages.push({ name, email, phone, message, date: new Date().toLocaleString() });
-    localStorage.setItem("messages", JSON.stringify(messages));
+        e.preventDefault();
 
-    document.getElementById("contactSuccess").style.display = "block";
-    contactForm.reset();
-  });
+        emailjs.sendForm(
+            "service_vlz8hpb",
+            "template_l1ea27c",
+            this
+        )
+        .then(() => {
+
+            document.getElementById("contactSuccess").style.display = "block";
+
+            contactForm.reset();
+
+        })
+        .catch((error) => {
+
+            alert("Failed to send message.");
+
+            console.log(error);
+
+        });
+
+    });
+
 }
 
 // -----------------------
